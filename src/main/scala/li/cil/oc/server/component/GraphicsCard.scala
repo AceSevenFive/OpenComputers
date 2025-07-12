@@ -61,12 +61,12 @@ class GraphicsCard(val tier: Int) extends prefab.ManagedEnvironment with DeviceI
 
   private def screen(f: (api.internal.TextBuffer) => Array[AnyRef]): Array[AnyRef] = screen(bufferIndex, f)
 
-  final val setBackgroundCosts = Array(1.0 / 32, 1.0 / 64, 1.0 / 128)
-  final val setForegroundCosts = Array(1.0 / 32, 1.0 / 64, 1.0 / 128)
-  final val setPaletteColorCosts = Array(1.0 / 2, 1.0 / 8, 1.0 / 16)
-  final val setCosts = Array(1.0 / 64, 1.0 / 128, 1.0 / 256)
-  final val copyCosts = Array(1.0 / 16, 1.0 / 32, 1.0 / 64)
-  final val fillCosts = Array(1.0 / 32, 1.0 / 64, 1.0 / 128)
+  final val setBackgroundCosts = Array(1.0 / 32, 1.0 / 64, 1.0 / 128, 0.0)
+  final val setForegroundCosts = Array(1.0 / 32, 1.0 / 64, 1.0 / 128, 0.0)
+  final val setPaletteColorCosts = Array(1.0 / 2, 1.0 / 8, 1.0 / 16, 0.0)
+  final val setCosts = Array(1.0 / 64, 1.0 / 128, 1.0 / 256, 0.0)
+  final val copyCosts = Array(1.0 / 16, 1.0 / 32, 1.0 / 64, 0.0)
+  final val fillCosts = Array(1.0 / 32, 1.0 / 64, 1.0 / 128, 0.0)
   // These are dirty page bitblt budget costs
   // a single bitblt can send a screen of data, which is n*set calls where set is writing an entire line
   // So for each tier, we multiple the set cost with the number of lines the screen may have

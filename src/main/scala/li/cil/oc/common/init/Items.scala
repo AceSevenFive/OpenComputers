@@ -344,6 +344,7 @@ object Items extends ItemAPI {
     Recipes.addSubItem(new item.GraphicsCard(multi, Tier.One), Constants.ItemName.GraphicsCardTier1, "oc:graphicsCard1")
     Recipes.addSubItem(new item.GraphicsCard(multi, Tier.Two), Constants.ItemName.GraphicsCardTier2, "oc:graphicsCard2")
     Recipes.addSubItem(new item.GraphicsCard(multi, Tier.Three), Constants.ItemName.GraphicsCardTier3, "oc:graphicsCard3")
+    Recipes.addSubItem(new item.GraphicsCard(multi, Tier.Four), Constants.ItemName.GraphicsCardTier4, "oc:graphicsCard4")
     Recipes.addSubItem(new item.NetworkCard(multi), Constants.ItemName.NetworkCard, "oc:lanCard")
     Recipes.addSubItem(new item.RedstoneCard(multi, Tier.Two), Constants.ItemName.RedstoneCardTier2, "oc:redstoneCard2")
     Recipes.addSubItem(new item.WirelessNetworkCard(multi, Tier.Two), Constants.ItemName.WirelessNetworkCardTier2, "oc:wlanCard2")

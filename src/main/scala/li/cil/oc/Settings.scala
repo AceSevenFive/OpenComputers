@@ -512,8 +512,8 @@ object Settings {
   val namespace = "oc:"
   val savePath = "opencomputers/"
   val scriptPath: String = "/assets/" + resourceDomain + "/lua/"
-  val screenResolutionsByTier: Array[(Int, Int)] = Array((50, 16), (80, 25), (160, 50))
-  val screenDepthsByTier: Array[api.internal.TextBuffer.ColorDepth] = Array(api.internal.TextBuffer.ColorDepth.OneBit, api.internal.TextBuffer.ColorDepth.FourBit, api.internal.TextBuffer.ColorDepth.EightBit)
+  val screenResolutionsByTier: Array[(Int, Int)] = Array((50, 16), (80, 25), (160, 50), (480, 150), (480, 150))
+  val screenDepthsByTier: Array[api.internal.TextBuffer.ColorDepth] = Array(api.internal.TextBuffer.ColorDepth.OneBit, api.internal.TextBuffer.ColorDepth.FourBit, api.internal.TextBuffer.ColorDepth.EightBit, api.internal.TextBuffer.ColorDepth.EightBit, api.internal.TextBuffer.ColorDepth.EightBit)
   val deviceComplexityByTier: Array[Int] = Array(12, 24, 32, 9001)
   var rTreeDebugRenderer = false
   var blockRenderId: Int = -1

@@ -80,7 +80,7 @@ class Case(var tier: Int) extends traits.PowerAcceptor with traits.Computer with
   // ----------------------------------------------------------------------- //
 
   override def readFromNBTForServer(nbt: NBTTagCompound) {
-    tier = nbt.getByte(Settings.namespace + "tier") max 0 min 3
+    tier = nbt.getByte(Settings.namespace + "tier") max 0 min 6
     color = Color.byTier(tier)
     super.readFromNBTForServer(nbt)
     isSizeInventoryReady = true

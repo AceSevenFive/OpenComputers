@@ -37,7 +37,7 @@ object InventorySlots {
     ),
 
     Array(
-      InventorySlot(Slot.Card, Tier.Three),
+      InventorySlot(Slot.Card, Tier.Four),
       InventorySlot(Slot.Card, Tier.Three),
       InventorySlot(Slot.Card, Tier.Three),
       InventorySlot(Slot.Memory, Tier.Three),

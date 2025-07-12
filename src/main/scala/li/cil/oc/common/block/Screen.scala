@@ -46,7 +46,7 @@ class Screen(val tier: Int) extends RedstoneAware {
   // ----------------------------------------------------------------------- //
 
   object Icons {
-    var b, b2, bbl, bbl2, bbm, bbm2, bbr, bbr2, bhb, bhb2, bhm, bhm2, bht, bht2, bml, bmm, bmr, btl, btm, btr, bvb, bvb2, bvm, bvt, f, f2, fbl, fbl2, fbm, fbm2, fbr, fbr2, fhb, fhb2, fhm, fhm2, fht, fht2, fml, fmm, fmr, ftl, ftm, ftr, fvb, fvb2, fvm, fvt = null: IIcon
+    var b, b2, bbl, bbl2, bbm, bbm2, bbr, bbr2, bhb, bhb2, bhm, bhm2, bht, bht2, bml, bmm, bmr, btl, btm, btr, bvb, bvb2, bvm, bvt, f, f2, fbl, fbl2, fbm, fbm2, fbr, fbr2, fhb, fhb2, fhm, fhm2, fht, fht2, fml, fmm, fmr, ftl, ftm, ftr, fvb, fvb2, fvm, fvt, m = null: IIcon
 
     def fh = Array(fht, fhm, fhb)
 
@@ -243,13 +243,13 @@ class Screen(val tier: Int) extends RedstoneAware {
           case _ => null
         }
       case screen: tileentity.Screen =>
-        val (f, b, t, s) = screen.pitch match {
-          case ForgeDirection.NORTH => (Icons.f2, Icons.b2, Icons.b, Icons.b2)
-          case _ => (Icons.f, Icons.b, Icons.b2, Icons.b2)
+        val (m, b, t, s) = screen.pitch match {
+          case ForgeDirection.NORTH => (Icons.m, Icons.b2, Icons.b, Icons.b2)
+          case _ => (Icons.m, Icons.b, Icons.b2, Icons.b2)
         }
         localSide match {
-          case ForgeDirection.SOUTH => f
-          case ForgeDirection.NORTH => b
+          case ForgeDirection.SOUTH => m
+          case ForgeDirection.NORTH => m
           case ForgeDirection.DOWN | ForgeDirection.UP => t
           case _ => s
         }
@@ -312,6 +312,7 @@ class Screen(val tier: Int) extends RedstoneAware {
     Icons.fvb2 = iconRegister.registerIcon(Settings.resourceDomain + ":screen/fvb2")
     Icons.fvm = iconRegister.registerIcon(Settings.resourceDomain + ":screen/fvm")
     Icons.fvt = iconRegister.registerIcon(Settings.resourceDomain + ":screen/fvt")
+    Icons.m = iconRegister.registerIcon(Settings.resourceDomain + ":screen/m")
   }
 
   // ----------------------------------------------------------------------- //

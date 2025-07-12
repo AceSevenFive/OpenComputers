@@ -64,6 +64,8 @@ object Blocks {
     Recipes.addBlock(new Screen(Tier.One), Constants.BlockName.ScreenTier1, "oc:screen1")
     Recipes.addBlock(new Screen(Tier.Three), Constants.BlockName.ScreenTier3, "oc:screen3")
     Recipes.addBlock(new Screen(Tier.Two), Constants.BlockName.ScreenTier2, "oc:screen2")
+    Recipes.addBlock(new Screen(Tier.Four), Constants.BlockName.TileScreen1, "oc:tilescreen1")
+    Recipes.addBlock(new Screen(Tier.Five), Constants.BlockName.TileScreen2, "oc:tilescreen2")
     Recipes.addBlock(new Rack(), Constants.BlockName.Rack, "oc:rack", "oc:serverRack")
     Items.registerBlock(new Switch(), Constants.BlockName.Switch)
 

@@ -67,7 +67,7 @@ object Color {
     "dyeOrange" -> Orange,
     "dyeWhite" -> White)
 
-  val byTier = Array(LightGray, Yellow, Cyan, Magenta)
+  val byTier = Array(LightGray, Yellow, Cyan, Magenta, Magenta)
 
   def byMeta(meta: Int) = byOreName(dyes(15 - meta))
 
